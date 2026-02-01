@@ -18,7 +18,7 @@
  * @param = count {integer}
  * @return = students {array}
  */
- // Initialize an array called students. 
+ // Initialize an empty array called students. 
  // Define for loop to run count times starting at 1
  // Push each student name into the array via user input ("student 1:")
  // End the loop
@@ -38,9 +38,9 @@
  * @param = students {array}, gateKeeper {string}
  * @return = keyMaster {string}
  */
- // Initialize keyMaster as "none"
+ // Define keyMaster
+ // Define student
  // Initialize picked as false
- // Initialize student
  // Define loop, run while picked equals false
  // Set student as random index number, 0 to < length of students array.
  // Set keyMaster as element in students array at random index student
