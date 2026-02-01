@@ -10,7 +10,7 @@
  // Initialize count as prompt asking how many students there are.
  // Initialize array students equal to addStudents with argument count
  // Initialize gateKeeper = randStudent(students), the name of a random student in the list
- // Initialize keyMaster = randNewStudent(students, student), name of a different random student
+ // Initialize keyMaster = randNewStudent(students, gateKeeper), name of a different random student
  // Display gatekeeper name and keymaster name for this kata
 
 /* Function addStudents(count) 
