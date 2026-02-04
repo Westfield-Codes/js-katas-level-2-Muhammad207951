@@ -1,45 +1,40 @@
-/* CALCULATOR KATA */
 
-/* This is best done with a JS switch control, though can also be a chain of conditionals. */
-
-/* FUNCTION main() 
- * Perform basic arithmetic as a calculator
- * @param: none (main never gets params)
- * @return: none (main never gets returns)
- */
 function main(){ 
     let operation = prompt ("What operation do you want? (+, -, *, /)" );
     let a = parseInt(prompt("Add your fist Number"));
     let b = parseInt(prompt("Enter Your Second Number"));
- // Based on the operation, send the numbers to the right function as arguments 
 
- // store the returned value in variable called result
-let returnedValue = result;
- // Alert the equation a + operation + b = result
- alert (a + b "=" result )
+    switch (operation) {
+    case "+":
+        result= add(a,b);
+        break;
+    case "-":
+        result= subtract(a,b);
+        break;
+    case "*":
+        result= multiply(a,b);
+        break;
+    case "/":
+        result= divide(a,b);
+        break;
+
 }
-/* FUNCTION add(a,b)
- * define a function called add with two number parameters a and b
- * @param: a, b (integers)
- * @return: a + b
- */
 
-/* FUNCTION subtract(a,b)
- * define a function called subtract with two number parameters a and b
- * @param: a, b (integers)
- * @return: a - b
- */
+ alert (a + operation + b + "=" + result );
+}
 
-/* FUNCTION multiply(a,b)
- * define a function called multiply with two number parameters a and b
- * @param: a, b (integers)
- * @return: a * b (* means multiply)
- */
+function add(a,b){
+    return a + b;
+}
 
-/* FUNCTION divide(a,b)
- * define a function called divide with two number parameters a and b
- * @param: a, b (integers)
- * @return: a / b (/ means divided by)
- */
+function subtract(a,b){
+    return a - b;
+}
 
-/* ************************************* */
+function multiply(a,b){
+    return a * b;
+}
+
+function divide(a,b){
+    return a / b;
+}
